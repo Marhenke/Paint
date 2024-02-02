@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paint App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="" id="paint-container">
+      
+        <canvas class="" id="canvas" width="800" height="600"></canvas>
+        <div class="" id="sidebar">
+          <ul class="" id="colores">
+            <div class="color-row">
+              <li class="color" id="white" data-color="white"></li>
+              <li class="color" id="gold" data-color="gold"></li>
+            </div>
+            <div class="color-row">
+                <li class="color" id="red" data-color="red"></li>
+                <li class="color" id="darkorange" data-color="darkorange"></li>
+              </div>
+            <div class="color-row">
+              <li class="color" id="forestgreen" data-color="forestgreen"></li>
+              <li class="color" id="royalblue" data-color="royalblue"></li>
+            </div>
+            <div class="color-row">
+              <li class="color" id="darkorchid" data-color="darkorchid"></li>
+              <li class="color" id="hotpink" data-color="hotpink"></li>
+            </div>
+            <div class="color-row">
+              <li class="color" id="saddlebrown" data-color="saddlebrown"></li>
+              <li class="color" id="black" data-color="black"></li>
+            </div>
+          </ul>
+          <input type="color" id="selector-color" />
+          <p class="text-start">color selector</p>
+          <input type="range" id="selector-tamanio" min="5" max="100" />
+          <p class="text-start">brush size</p>
+          <button id="btn-borrar">Clear</button>
+          <button id="download-btn">Download</button>
+        </div>
+      
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

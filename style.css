@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,500;1,500&display=swap');
+
+#paint-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 3em;
+  margin-left: 2em;
+  margin-right: 2em;
+}
+
+body{
+    background: #fb7c3c;
+    background: radial-gradient(at center, #fb7c3c, #9932bb);
+}
+
+#canvas {
+  border: 1px solid #ccc;
+  background-color: white;
+  border-radius: 10px;
+}
+
+#sidebar {
+  background: rgba(255, 255, 255, 0.45);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  padding-top: 2em;
+  
+}
+
+#colores {
+  list-style: none;
+  padding: 0;
+}
+
+.color {
+  width: 20px;
+  height: 20px;
+  margin: 5px;
+  cursor: pointer;
+  background-color: black;
+  border-radius: 3px;
+}
+
+.color-row{
+    display: flex;
+}
+
+#white {
+  background-color: white;
+}
+
+#gold {
+  background-color: gold;
+}
+
+#red {
+    background-color: red;
+  }
+  
+#darkorange {
+    background-color: darkorange;
+}
+
+#forestgreen {
+  background-color: forestgreen;
+}
+
+#royalblue {
+  background-color: royalblue;
+}
+
+#darkorchid {
+  background-color: darkorchid;
+}
+
+#hotpink {
+  background-color: hotpink;
+}
+
+#saddlebrown {
+  background-color: saddlebrown;
+}
+
+#black {
+  background-color: black;
+}
+
+#selector-color {
+  width: 100px;
+  border-radius: 3px;
+}
+
+#selector-tamanio {
+  width: 100px;
+  margin-top: 1em;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+p{
+    margin-top: 0;
+    font-family: "Raleway", sans-serif;
+    font-size: 0.8em;
+}
+
+button {
+  border-radius: 3px;
+  border: none;
+  margin-top: 1em;
+  padding: 0.5em;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+input[type="color"] {
+  border: none;
+  height: 20px;
+  padding: 0px;
+  border-radius: 3px;
+}
+input[type="color"]::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+input[type="color"]::-webkit-color-swatch {
+  border: none;
+}
+
+
+input[type="range"] {
+  /* removing default appearance */
+  -webkit-appearance: none;
+  appearance: none;
+  /* creating a custom design */
+  width: 100%;
+  cursor: pointer;
+  outline: none;
+  /*  slider progress trick  */
+  overflow: hidden;
+  border-radius: 16px;
+}
+
+/* Track: webkit browsers */
+input[type="range"]::-webkit-slider-runnable-track {
+  height: 15px;
+  background: #ccc;
+  border-radius: 16px;
+}
+
+/* Track: Mozilla Firefox */
+input[type="range"]::-moz-range-track {
+  height: 15px;
+  background: #ccc;
+  border-radius: 16px;
+}
+
+/* Thumb: webkit */
+input[type="range"]::-webkit-slider-thumb {
+  /* removing default appearance */
+  -webkit-appearance: none;
+  appearance: none;
+  /* creating a custom design */
+  height: 15px;
+  width: 15px;
+  background-color: #fff;
+  border-radius: 50%;
+  border: 2px solid gray;
+  /*  slider progress trick  */
+  box-shadow: -407px 0 0 400px white;
+}
+
+/* Thumb: Firefox */
+input[type="range"]::-moz-range-thumb {
+  height: 15px;
+  width: 15px;
+  background-color: #fff;
+  border-radius: 50%;
+  border: 1px solid white;
+  /*  slider progress trick  */
+  box-shadow: -407px 0 0 400px white;
+}
